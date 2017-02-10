@@ -1,5 +1,5 @@
 #section {
-  background-image:url(bgimage.jpg);
+  background-color: #2E2E2E;
   background-size: 100% 100%;
   background-repeat:no-repeat;
   height:100%;
@@ -16,7 +16,15 @@
 }
 
 #subheader {
-  font-size: 56px;
+  font-size: 64px;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: white;
+  font-family: Verdana;
+}
+
+#smalltext {
+  font-size: 32px;
   margin-top: 20px;
   margin-left: 80px;
   color: white;
