@@ -8,6 +8,60 @@
 }
 
 #header {
+  font-size: 6vw;
+  margin-top: 6vw;
+  margin-left: 6vw;
+  color: white;
+  font-family: Verdana;
+}
+
+#subheader {
+  font-size: 3vw;
+  margin-top: 1vw;
+  margin-left: 6vw;
+  color: white;
+  font-family: Verdana;
+}
+
+#smalltext {
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  margin-left: 6vw;
+  color: white;
+  font-family: Verdana;
+}
+
+a.download {
+	text-decoration: none;
+}
+
+div.download {
+	background-color: #000000bb;
+	margin-left: 6vw;
+    margin-top: 3vw;
+	display: inline-block;
+	padding: 20px 30px 20px 30px;
+	width: auto;
+}
+
+p.download {
+	font-family: Verdana;
+	font-size: 2vw;
+	color: white;
+	margin: 0;
+}
+
+/*
+#section {
+  background-color: #2E2E2E;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  height:100%;
+  width:100%;
+  display:inline-block;
+}
+
+#header {
   font-size: 128px;
   margin-top: 100px;
   margin-left: 80px;
@@ -25,8 +79,10 @@
 
 #smalltext {
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 80px;
   color: white;
   font-family: Verdana;
 }
+
+*/
