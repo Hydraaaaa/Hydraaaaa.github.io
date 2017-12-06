@@ -8,9 +8,9 @@
 }
 
 .contactcard {
-  background-color: green;
+  background-color: #1B1A2A;
   width: 610px;
-  box-shadow: 5px 5px 2px #888888;
+  box-shadow: 3px 3px 2px #00000055;
   font-size: 25px;
   margin-top: 3vw;
   margin-left: 6vw;
@@ -94,7 +94,7 @@ nav {
   top: 0;
   left: 0;
   height: 100%;
-  width: 18%;
+  width: 0;
   z-index: 1;
 }
 
@@ -105,13 +105,14 @@ nav ul {
   position: relative;
   display: table;
   margin: 0 auto;
-  background: #0f82e6;
+  background: #1B1A2A;
+  box-shadow: 3px 3px 2px #00000055;
   height: 100%;
 }
 
 nav ul.active a {
-  color: #F38A8A;
-  border-bottom: 3px solid #F38A8A;
+  color: #1B1A2A;
+  border-bottom: 3px solid #1B1A2A;
 }
 
 nav ul li {
@@ -128,14 +129,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #F38A8A;
+  color: #BB77BB;
 }
 
 .content {
   margin-left: 22%;
   width: 60%;
   padding-left: 0px;
-  background-color: rgba(255, 0, 0, 0.1);
   margin-top: 10%;
 }
 
