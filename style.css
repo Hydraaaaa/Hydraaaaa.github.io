@@ -1,54 +1,185 @@
-#section {
+.section {
   background-color: #2E2E2E;
   background-size: 100% 100%;
-  background-repeat:no-repeat;
-  height:100%;
-  width:100%;
-  display:inline-block;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
 }
 
-#header {
-  font-size: 6vw;
-  margin-top: 6vw;
-  margin-left: 6vw;
-  color: white;
-  font-family: Verdana;
-}
-
-#subheader {
-  font-size: 3vw;
-  margin-top: 1vw;
-  margin-left: 6vw;
-  color: white;
-  font-family: Verdana;
-}
-
-#smalltext {
-  font-size: 1.5vw;
+.contactcard {
+  background-color: green;
+  width: 610px;
+  box-shadow: 5px 5px 2px #888888;
+  font-size: 25px;
   margin-top: 3vw;
   margin-left: 6vw;
   color: white;
   font-family: Verdana;
 }
 
+@media (max-width: 1280px) and (min-width: 1280px) {
+  #smalltext {
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #smalltext {
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  25%, 75% {
+    -webkit-transform: translateY(-8%);
+  }
+  50% {
+    -webkit-transform: translateY(-16%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.scrolldown {
+  -webkit-animation: bounce 1s infinite;
+}
+
+#header {
+  font-size: 80px;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: white;
+  font-family: Verdana;
+}
+
+#subheader {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: white;
+  font-family: Verdana;
+}
+
+#smalltext {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: white;
+  font-family: Verdana;
+}
+
+nav {
+  font-family: Verdana;
+  position: fixed;
+}
+
+nav ul {
+  list-style: none;
+  position: relative;
+  display: table;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 18%;
+  z-index: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  background: #0f82e6;
+  height: 100%;
+}
+
+nav ul.active a {
+  color: #F38A8A;
+  border-bottom: 3px solid #F38A8A;
+}
+
+nav ul li {
+  /*display:table-cell;*/
+  height: 25%;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #F38A8A;
+}
+
+.content {
+  margin-left: 22%;
+  width: 60%;
+  padding-left: 0px;
+  background-color: rgba(255, 0, 0, 0.1);
+  margin-top: 10%;
+}
+
+.navimage {
+  height: 150px;
+  width: 150;
+}
+
 a.download {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+a.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 div.download {
-	background-color: #000000bb;
-	margin-left: 6vw;
-    margin-top: 3vw;
-	display: inline-block;
-	padding: 20px 30px 20px 30px;
-	width: auto;
+  background-color: #000000bb;
+  margin-left: 6vw;
+  margin-top: 3vw;
+  display: inline-block;
+  padding: 20px 30px 20px 30px;
+  width: auto;
+  margin-bottom: 20px;
 }
 
 p.download {
-	font-family: Verdana;
-	font-size: 2vw;
-	color: white;
-	margin: 0;
+  font-family: Verdana;
+  font-size: 2vw;
+  color: white;
+  margin: 0;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  vertical-align: middle;
+}
+
+.info {
+  margin-left: 10px;
 }
 
 /*
