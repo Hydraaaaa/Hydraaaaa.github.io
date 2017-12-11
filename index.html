@@ -1,250 +1,102 @@
 <!DOCTYPE html>
-
-<html style="height:100%;">
-
+<html>
+<title>James da Silva</title>
+<link rel="stylesheet" href="w3.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <head>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		$(document).ready(function() {
-			$("a").on('click', function(event) {
-
-				if (this.hash !== "") {
-					event.preventDefault();
-
-					var hash = this.hash;
-
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function() {
-
-						window.location.hash = hash;
-					});
-				}
-			});
-			// 			// Cache selectors
-			// var lastId,
-			//  topMenu = $("#mainNav"),
-			//  topMenuHeight = topMenu.outerHeight()+1,
-			//  // All list items
-			//  menuItems = topMenu.find("a"),
-			//  // Anchors corresponding to menu items
-			//  scrollItems = menuItems.map(function(){
-			//    var item = $($(this).attr("href"));
-			//     if (item.length) { return item; }
-			//  });
-			//
-			// // Bind click handler to menu items
-			// // so we can get a fancy scroll animation
-			// menuItems.click(function(e){
-			//   var href = $(this).attr("href"),
-			//       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-			//   $('html, body').stop().animate({
-			//       scrollTop: offsetTop
-			//   }, 850);
-			//   e.preventDefault();
-			// });
-			//
-			// // Bind to scroll
-			// $(window).scroll(function(){
-			//    // Get container scroll position
-			//    var fromTop = $(this).scrollTop()+topMenuHeight;
-			//
-			//    // Get id of current scroll item
-			//    var cur = scrollItems.map(function(){
-			//      if ($(this).offset().top < fromTop)
-			//        return this;
-			//    });
-			//    // Get the id of the current element
-			//    cur = cur[cur.length-1];
-			//    var id = cur && cur.length ? cur[0].id : "";
-			//
-			//    if (lastId !== id) {
-			//        lastId = id;
-			//        // Set/remove active class
-			//        menuItems
-			//          .parent().removeClass("active")
-			//          .end().filter("[href=#"+id+"]").parent().addClass("active");
-			//    }
-			// });
-
-		});
-
-		// 			// Cache selectors
-		// var lastId,
-		//  topMenu = $("#mainNav"),
-		//  topMenuHeight = topMenu.outerHeight()+1,
-		//  // All list items
-		//  menuItems = topMenu.find("a"),
-		//  // Anchors corresponding to menu items
-		//  scrollItems = menuItems.map(function(){
-		//    var item = $($(this).attr("href"));
-		//     if (item.length) { return item; }
-		//  });
-		//
-		// // Bind click handler to menu items
-		// // so we can get a fancy scroll animation
-		// menuItems.click(function(e){
-		//   var href = $(this).attr("href"),
-		//       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-		//   $('html, body').stop().animate({
-		//       scrollTop: offsetTop
-		//   }, 850);
-		//   e.preventDefault();
-		// });
-		//
-		// // Bind to scroll
-		// $(window).scroll(function(){
-		//    // Get container scroll position
-		//    var fromTop = $(this).scrollTop()+topMenuHeight;
-		//
-		//    // Get id of current scroll item
-		//    var cur = scrollItems.map(function(){
-		//      if ($(this).offset().top < fromTop)
-		//        return this;
-		//    });
-		//    // Get the id of the current element
-		//    cur = cur[cur.length-1];
-		//    var id = cur && cur.length ? cur[0].id : "";
-		//
-		//    if (lastId !== id) {
-		//        lastId = id;
-		//        // Set/remove active class
-		//        menuItems
-		//          .parent().removeClass("active")
-		//          .end().filter("[href=#"+id+"]").parent().addClass("active");
-		//    }
-		// });
+	(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'fast');
+        return this; // for chaining...
+    }
+})(jQuery);
 	</script>
-	<title>
-		James da Silva
-	</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<nav>
-	<ul id="mainNav">
-		<li class="active"><a href="#home">Home</a></li>
-		<li><a href="#pane1">Ball Bashin' Fun</br><img src="BBFsmall.jpg" class="navimage"/></a></li>
-		<li><a href="#pane2">Deadline</br><img src="Deadlinesmall.jpg" class="navimage"/></a></li>
-		<!--<li><a href="#pane3">Pane3</br><img src="gmail.png" class="navimage"/></a></li>-->
-	</ul>
-</nav>
+<body>
 
-<body style="margin:0px; height:100%;">
-	<div class="section" style="background-image:url(background.jpg);" id="home">
-		<div class="content">
-			<div id="header">
+	<div class="w3-sidebar w3-bar-block w3-black w3-hide-small" style="width:300px; box-shadow: 3px 0px 5px #00000055;">
+		<a class="w3-bar-item w3-blue w3-center w3-button" onclick="$('#Top').goTo();">
+			<h1>James da Silva</h1>
+		</a>
+		<a href="#Deadline" class="w3-button" style="padding:0;" onclick="$('#Deadline').goTo();">
+			<h1 class="w3-bar-item w3-center" style="margin:0;">Deadline</h1>
+			<img src="Deadlinesmall.jpg" class="" style="width:100%;"/>
+		</a>
+		<a href="#BBF" class="w3-button" style="padding:0;" onclick="$('#BBF').goTo();">
+			<h1 class="w3-bar-item w3-center" style="margin:0;">Ball Bashin' Fun</h1>
+			<img src="BBFsmall.jpg" class="" style="width:100%;"/>
+		</a>
+	</div>
+	
+	<div class="w3-display-container w3-center section" style="background-image:url('Background.jpg');" id="Top">
+		<div class="w3-display-topmiddle" style="width: 100%; max-width: 700px;">
+			<h1>
 				James da Silva
-			</div>
-			<div id="subheader">
-				Games Programmer <br>
-				<span style="font-size: 25px;">Unity | C# | C++</span>
-			</div>
-			<div class="contactcard">
-				<img src="gmail.png" class="icon" />
-				<a href="mailto:james.dasilva1111@gmail.com">
-					<span class="info">james.dasilva1111@gmail.com</span>
+			</h1>
+			<p>
+				Hello, I'm James, I recently graduated from the Academy of Interactive Entertainment (AIE) with an Advanced Diploma of Game Development. I'm a programmer who has experience with Unity, C#, C++ and OpenGL.
+			</p>
+			<div class="w3-container panel">
+				<a href="https://www.linkedin.com/in/jamesdasilva1">
+					<img src="linkedin.png"><span style="padding-left: 5px; font-size: 25px;">https://www.linkedin.com/in/jamesdasilva1</span>
 				</a>
 				<br>
-
-				<a href="https://www.linkedin.com/in/jamesdasilva1">
-					<img src="linkedin.png" class="icon"/><span class="info">www.linkedin.com/in/jamesdasilva1</span>
-					</a>
-				<br>
-
 				<a href="https://github.com/Hydraaaaa">
-					<img src="github.png" class="icon"/><span class="info">github.com/Hydraaaaa</span>
-					</a>
-				<br>
-			</div>
-
-			<div style="position: absolute; bottom: 30px; left: 48%;">
-				<a href="#pane1">
-
-						<img src="arrow.png" style="width: 40px; height: 40px;" class="scrolldown"/>
-					</a>
-
+					<img src="github.png"><span style="padding-left: 5px; font-size: 25px;">https://github.com/Hydraaaaa</span>
+				</a>
 			</div>
 		</div>
+		<img src="arrow.png" class="w3-display-bottommiddle" style="width: 40px; height: 40px; margin-bottom: 20px;"/>
 	</div>
-	<div class="section" style="background-image:url(BBF.jpg);" id="pane1">
-		<div class="content">
-			<div id="header">
-				Ball Bashin' Fun
-				<img src="unity.png" style="height:5vw" />
-			</div>
-			<div id="subheader">
-				AIE Group Project 2016
-			</div>
-
-			<div id="smalltext">
-
-				Ball Bashin' Fun is a 1-4 player party game <br> where your goal is to smash your friends out <br> of the level and be the last one alive.
-
-			</div>
-
-			<a class="download" href="BBF.7z" download>
-				<div class="download">
-					<p class="download"> Download </p>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="section" style="background-image:url(Deadline.jpg);" id="pane2">
-		<div class="content">
-			<div id="header">
+	
+	<div class="w3-display-container w3-center section" style="background-image:url('Deadline.jpg');" id="Deadline">
+		<div class="w3-display-topmiddle"  style="width: 100%; max-width: 700px;">
+			<h1>
 				Deadline
-				<img src="unity.png" style="height:5vw" />
-			</div>
-			<div id="subheader">
-				AIE Group Project 2017
-			</div>
-
-			<div id="smalltext">
-
-				Deadline is a Co-op Twin-stick shooter where <br> your goal is to rescue as many civilians as <br> you can before making it out alive.
-
-			</div>
-
-			<a class="download" href="Deadline.7z" download>
-				<div class="download">
-					<p class="download"> Download </p>
-				</div>
-			</a>
-
-			<div id="smalltext" style="color: red;">
-
-				* Controller required.
-
+			</h1>
+			<p>
+				Deadline is my 2nd year AIE group project.<br><br>
+				Deadline is a Co-op Twin-stick shooter where your goal is to rescue as many civilians as you can before making it out alive.<br><br>
+				Deadline was made in Unity, with a team of two programmers, three artists, and a designer, over the course of 4 months.
+			</p>
+			<div class="w3-container panel">
+				<a href="https://github.com/scorchedgem/deadline">
+					<img src="github.png"><span style="padding-left: 5px; font-size: 25px;">https://github.com/scorchedgem/deadline</span>
+				</a>
+				<br>
+				<a href="Deadline.7z">
+					<img src="download.png"><span style="padding-left: 5px; font-size: 25px;">Download the game</span>
+				</a>
+				<br>
+				<span style="color: red; font-size: 16px;">* Controller Required</span>
 			</div>
 		</div>
 	</div>
-	<!--<div class="section" style="background-image:url(LUL.png);" id="pane3">
-		<div class="content">
-			<div id="header">
+	
+	<div class="w3-display-container w3-center section" style="background-image:url('BBF.jpg');" id="BBF">
+		<div class="w3-display-topmiddle"  style="width: 100%; max-width: 700px;">
+			<h1>
 				Ball Bashin' Fun
-				<img src="unity.png" style="height:5vw" />
+			</h1>
+			<p>
+				Ball Bashin' Fun is my 1st year AIE group project.<br><br>
+				Ball Bashin' Fun is a 1-4 player party game where your goal is to smash your friends out of the level and be the last one alive.<br><br>
+				Ball Bashin' Fun was made in Unity, with a team of two programmers, an artist, and a designer, over the course of several weeks.
+			</p>
+			<div class="w3-container panel">
+				<a href="https://github.com/Hydraaaaa/Ball-Bashin-Fun">
+					<img src="github.png"><span style="padding-left: 5px; font-size: 25px;">https://github.com/Hydraaaaa/Ball-Bashin-Fun</span>
+				</a>
+				<br>
+				<a href="BBF.7z">
+					<img src="download.png"><span style="padding-left: 5px; font-size: 25px;">Download the game</span>
+				</a>
 			</div>
-			<div id="subheader">
-
-				AIE Group Project 2016
-			</div>
-
-			<div id="smalltext">
-
-				Ball Bashin' Fun is a 1-4 player party game where your goal is to smash your friends out of the level and be the last one alive.
-
-			</div>
-
-			<a class="download" href="BBF.7z" download>
-				<div class="download">
-					<p class="download"> Download </p>
-				</div>
-			</a>
 		</div>
-	</div>-->
+	</div>
 </body>
-
 </html>

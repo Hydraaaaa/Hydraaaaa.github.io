@@ -1,219 +1,49 @@
 .section {
-  background-color: #2E2E2E;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  display: inline-block;
+	margin-left: 300px;
+	height: 100vh;
+	min-height: 800px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center; 
+    background-size: cover;
 }
 
-.contactcard {
-  background-color: #1B1A2A;
-  width: 610px;
-  box-shadow: 3px 3px 2px #00000055;
-  font-size: 25px;
-  margin-top: 3vw;
-  margin-left: 6vw;
-  color: white;
-  font-family: Verdana;
+.section h1 {
+	font-size:64px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	color: white;
 }
 
-@media (max-width: 1280px) and (min-width: 1280px) {
-  #smalltext {
-    margin-top: 30px;
-    margin-left: 0px;
-    width: 100%;
-  }
+.section p {
+	font-size:24px;
+	padding-top: 32px;
+	padding-bottom: 32x;
+	color: white;
 }
 
-@media (max-width: 768px) {
-  #smalltext {
-    margin-top: 30px;
-    margin-left: 0px;
-    width: 100%;
-  }
+.contact a {
+    text-decoration: none;
+	color: white;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0%);
-  }
-  25%, 75% {
-    -webkit-transform: translateY(-8%);
-  }
-  50% {
-    -webkit-transform: translateY(-16%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
+.contact a:hover {
+    text-decoration: underline;
 }
 
-.scrolldown {
-  -webkit-animation: bounce 1s infinite;
+.panel {
+	border-radius: 10px;
+	background-color: #00000099;
+	box-shadow: 3px 3px 5px #00000044;
+	color: white;
+	font-size: 20px;
+	text-align: left;
 }
 
-#header {
-  font-size: 80px;
-  margin-top: 20px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
+.panel img {
+	height: 64px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
-
-#subheader {
-  font-size: 40px;
-  margin-top: 20px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
-}
-
-#smalltext {
-  font-size: 18px;
-  margin-top: 20px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
-}
-
-nav {
-  font-family: Verdana;
-  position: fixed;
-}
-
-nav ul {
-  list-style: none;
-  position: relative;
-  display: table;
-  text-align: center;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  z-index: 1;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  display: table;
-  margin: 0 auto;
-  background: #1B1A2A;
-  box-shadow: 3px 3px 2px #00000055;
-  height: 100%;
-}
-
-nav ul.active a {
-  color: #1B1A2A;
-  border-bottom: 3px solid #1B1A2A;
-}
-
-nav ul li {
-  /*display:table-cell;*/
-  height: 25%;
-}
-
-nav ul li a {
-  padding: 10px 20px;
-  display: block;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: #BB77BB;
-}
-
-.content {
-  margin-left: 22%;
-  width: 60%;
-  padding-left: 0px;
-  margin-top: 10%;
-}
-
-.navimage {
-  height: 150px;
-  width: 150;
-}
-
-a.download {
-  text-decoration: none;
-}
-
-a.transition {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-div.download {
-  background-color: #000000bb;
-  margin-left: 6vw;
-  margin-top: 3vw;
-  display: inline-block;
-  padding: 20px 30px 20px 30px;
-  width: auto;
-  margin-bottom: 20px;
-}
-
-p.download {
-  font-family: Verdana;
-  font-size: 2vw;
-  color: white;
-  margin: 0;
-}
-
-.icon {
-  width: 65px;
-  height: 65px;
-  vertical-align: middle;
-}
-
-.info {
-  margin-left: 10px;
-}
-
-/*
-#section {
-  background-color: #2E2E2E;
-  background-size: 100% 100%;
-  background-repeat:no-repeat;
-  height:100%;
-  width:100%;
-  display:inline-block;
-}
-
-#header {
-  font-size: 128px;
-  margin-top: 100px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
-}
-
-#subheader {
-  font-size: 64px;
-  margin-top: 20px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
-}
-
-#smalltext {
-  font-size: 32px;
-  margin-top: 40px;
-  margin-left: 80px;
-  color: white;
-  font-family: Verdana;
-}
-
-*/
